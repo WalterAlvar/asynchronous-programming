@@ -13,7 +13,7 @@ const callback2 = (arg1, arg2) => {
   log(arg1, arg2);
   clearInterval(intervalId);
 };
-setTimeout(callback2, 5000, 'good', 'bye');
+setTimeout(callback2, 1000, 'good', 'bye');
 
 log('= = = =  the call stack is empty  = = = =');
 

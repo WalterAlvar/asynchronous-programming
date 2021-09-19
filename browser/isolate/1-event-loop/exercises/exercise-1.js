@@ -6,36 +6,36 @@ const log = labeledLogger();
 
 let x = '';
 
-x += _;
+x += 'java';
 
 const callback1 = () => {
   x += 'ri';
   log('cb 1:', x);
 };
-setTimeout(callback1, _);
+setTimeout(callback1, 20);
 
-x += _;
+// += _;
 
 const callback2 = () => {
   const test = x === 'javascript';
   log('cb 2:', test);
   console.assert(test, 'x should be "javascript"');
 };
-setTimeout(callback2, _);
+setTimeout(callback2, 40);
 
 const callback3 = () => {
   x += 'sc';
   log('cb 3:', x);
 };
-setTimeout(callback3, _);
+setTimeout(callback3, 10);
 
 const callback4 = () => {
   x += 'pt';
   log('cb 4:', x);
 };
-setTimeout(callback4, _);
+setTimeout(callback4, 30);
 
-x += _;
+//x += _;
 
 log(x);
 

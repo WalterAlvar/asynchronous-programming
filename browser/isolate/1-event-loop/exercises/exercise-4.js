@@ -25,7 +25,7 @@ const exercise5_cb_2 = () => {
   const test = arr.length === 7;
   console.assert(test, 'Test 2');
 };
-setTimeout(exercise5_cb_2, 750);
+setTimeout(exercise5_cb_2, 700);
 
 const exercise5_cb_3 = () => {
   const sum = arr.reduce((sum, next) => sum + next, 0);

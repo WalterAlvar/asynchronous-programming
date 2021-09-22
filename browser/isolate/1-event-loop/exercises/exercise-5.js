@@ -6,9 +6,8 @@ const log = labeledLogger();
 //  read items from the unsorted array to the sorted array
 //  you can control the order of the sorted array by using different delays in a setTimeout
 const sortArray = (unsorted, sorted) => {
-  sorted = toSort1
-  const index = 4
-  sorted.charCodeAt(index);
+ log(unsorted, sorted);
+ setTimeout
 };
 
 // can you figure out why the tests pass in the order they do?

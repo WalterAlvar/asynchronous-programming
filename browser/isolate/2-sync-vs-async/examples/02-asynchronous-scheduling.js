@@ -7,7 +7,7 @@ const log = labeledLogger();
   now what happens if we do the same thing with setTimeout?
 
 */
-
+// #reviewed
 const callback1 = () => {
   log('+ execute async  1000 ms');
 };

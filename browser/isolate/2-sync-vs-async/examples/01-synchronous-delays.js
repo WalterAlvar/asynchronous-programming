@@ -27,18 +27,18 @@ const callback1 = () => {
   log('- end synchronous 1000 ms');
 };
 log('- begin synchronous 1000 ms');
-synchronousTimeout(callback1, 2000);
+synchronousTimeout(callback1, 3000);//change ms to watch better
 
 const callback2 = () => {
   log('- end synchronous 500 ms');
 };
 log('- begin synchronous 500 ms');
-synchronousTimeout(callback2, 1000);
+synchronousTimeout(callback2, 2000);
 
 const callback3 = () => {
   log('- end synchronous 0 ms');
 };
 log('- begin synchronous 0 ms');
-synchronousTimeout(callback3, 100);
+synchronousTimeout(callback3, 1000);
 
 log('= = = =  the call stack is empty  = = = =');

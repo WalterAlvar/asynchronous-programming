@@ -8,21 +8,21 @@ const log = labeledLogger();
   what happens if we call the setTimeouts before the synchronousTimeouts?
 
 */
-
+// #reviewed
 const callback1 = () => {
   log('+ execute async  1000 ms');
 };
-log('+ schedule async 1000 ms');
+log('+ schedule async thousand ms');
 setTimeout(callback1, 1000);
 
 const callback2 = () => {
-  log('+ execute async  500 ms');
+  log('+ execute async  five hundred ms');
 };
 log('+ schedule async 500 ms');
 setTimeout(callback2, 500);
 
 const callback3 = () => {
-  log('+ execute async  0 ms');
+  log('+ execute async  zero ms');
 };
 log('+ schedule async 0 ms');
 setTimeout(callback3, 0);

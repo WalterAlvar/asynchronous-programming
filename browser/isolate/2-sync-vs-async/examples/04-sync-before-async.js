@@ -9,6 +9,8 @@ const log = labeledLogger();
 
 */
 
+// Great Exemple! #reviewed
+
 log('- begin synchronous 1000 ms');
 synchronousTimeout(log, 1000, '- end synchronous 1000 ms');
 

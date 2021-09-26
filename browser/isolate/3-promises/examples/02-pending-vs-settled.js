@@ -18,6 +18,8 @@ const log = labeledLogger();
     PromiseResult : the value passed into `resolve` or `reject`
 */
 
+// #reviewed
+
 // always pending
 const pendingExecutor = (resolve, reject) => {
   // neither resolve nor reject are called!

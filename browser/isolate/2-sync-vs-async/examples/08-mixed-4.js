@@ -2,7 +2,7 @@ import { labeledLogger } from '/browser/lib/labeled-logger.js';
 import { synchronousTimeout } from '/browser/lib/synchronous-timeout.js';
 
 const log = labeledLogger();
-
+// #reviewed
 const callback1 = () => {
   log('+ execute async  1000 ms. NUEVE');//9
 };

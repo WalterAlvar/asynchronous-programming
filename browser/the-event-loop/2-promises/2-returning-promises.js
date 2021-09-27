@@ -4,9 +4,9 @@
  * @param {any} [value=delay] - The value to resolve in the returned promise.
  * @returns {Promise<any>} A promise resolving to the value parameter.
  */
-const returnAPromise = (value = 'hello') => {
+const returnAPromise = (valueTTTT = 'hello') => {
   const resolvingExecutor = (resolve) => {
-    resolve(value);
+    resolve(valueTTTT);//no matter how you call the value
   };
   return new Promise(resolvingExecutor);
 };

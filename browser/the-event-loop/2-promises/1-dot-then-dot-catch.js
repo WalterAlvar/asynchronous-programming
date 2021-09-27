@@ -1,4 +1,6 @@
-// fulfilled promise
+// #reviewed
+
+// fulfilled promise   
 new Promise((resolve) => {
   console.log('resolve executor');
   resolve('success!');

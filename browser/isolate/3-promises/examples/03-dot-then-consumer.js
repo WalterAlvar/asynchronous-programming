@@ -18,6 +18,8 @@ const log = labeledLogger();
 
 */
 
+
+// #reviewed
 const logResolvedValue = (value) => {
   log(value);
 };

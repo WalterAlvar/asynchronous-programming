@@ -2,6 +2,8 @@ import { labeledLogger } from '/browser/lib/labeled-logger.js';
 
 const log = labeledLogger();
 
+// #reviewed
+
 /*
   promises can be in one of three states:
   - pending (not settled):
@@ -31,7 +33,7 @@ log('always pending, never settled:', pendingPromise);
 // settled: fulfilled
 const fulfillExecutor = (resolve, reject) => {
   log('in fulfillExecutor');
-  resolve('hello from fulfillExecutor!');
+  resolve('hello from fulfillExecutor!'); // is this handled Sync?
 };
 const fulfilledPromise = new Promise(fulfillExecutor);
 log('settled, fulfilled:', fulfilledPromise);

@@ -2,6 +2,8 @@ import { labeledLogger } from '/browser/lib/labeled-logger.js';
 
 const log = labeledLogger();
 
+// #reviewed
+
 /*
   new Promise() creates ... a new promise!
   the constructor takes one argument:

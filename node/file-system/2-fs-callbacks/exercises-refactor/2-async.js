@@ -62,3 +62,5 @@ const readFile1 = (err, fileContents1) => {
   fs.readFile(filePath2, 'utf-8', readFile2);
 };
 fs.readFile(filePath1, 'utf-8', readFile1);
+
+// run code: node 2-async.js file-1.txt file-2.txt
